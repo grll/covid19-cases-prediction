@@ -199,7 +199,7 @@ html_theme = "pydata_sphinx_theme"
 # documentation.
 html_theme_options = {
     "external_links": [],
-    "github_url": "https://github.com/grll/growth_modeling",
+    "github_url": "https://github.com/grll/covid19-cases-prediction",
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -371,8 +371,8 @@ if pattern is None:
 
 # extlinks alias
 extlinks = {
-    "issue": ("https://github.com/pandas-dev/pandas/issues/%s", "GH"),
-    "wiki": ("https://github.com/pandas-dev/pandas/wiki/%s", "wiki "),
+    "issue": ("https://github.com/grll/covid19-cases-prediction/issues/%s", "GH"),
+    "wiki": ("https://github.com/grll/covid19-cases-prediction/wiki/%s", "wiki "),
 }
 
 
@@ -586,10 +586,11 @@ def linkcode_resolve(domain, info):
     if "+" in growth_modeling.__version__:
         return f"https://github.com/grll/covid19-cases-prediction/blob/master/growth_modeling/{fn}{linespec}"
     else:
-        return (
-            f"https://github.com/grll/covid19-cases-prediction/blob/"
-            f"v{growth_modeling.__version__}/growth_modeling/{fn}{linespec}"
-        )
+        # return (
+        #    f"https://github.com/grll/covid19-cases-prediction/blob/"
+        #    f"v{growth_modeling.__version__}/growth_modeling/{fn}{linespec}"
+        #)
+        return f"https://github.com/grll/covid19-cases-prediction/blob/master/growth_modeling/{fn}{linespec}"
 
 
 # remove the docstring of the flags attribute (inherited from numpy ndarray)

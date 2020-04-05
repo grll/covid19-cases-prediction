@@ -10,10 +10,9 @@ Growth Modeling Documentation
 
 **Date**: |today| **Version**: |version|
 
-**Useful links**:
-`Binary Installers <https://pypi.org/project/growth_modeling>`__ |
-`Source Repository <https://github.com/grll/growth_modeling>`__ |
-`Issues & Ideas <https://github.com/grll/growth_modeling/issues>`__ 
+**Useful links**: 
+`Source Repository <https://github.com/grll/covid19-cases-prediction>`__ |
+`Issues & Ideas <https://github.com/grll/covid19-cases-prediction/issues>`__ 
 
 :mod:`growth_modeling` is a `python <https://www.python.org/>`__ library for modeling growth trends (mainly exponential).
 It implements ready to be fit models with a simple and intuitive API similar to sklearn.
