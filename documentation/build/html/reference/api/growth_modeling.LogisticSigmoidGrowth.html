@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>growth_modeling.LogisticSigmoidGrowth &#8212; Growth Modeling 0.0.1 documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/getting_started.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/pandas.css" />
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="growth_modeling.LogisticSigmoidGrowth.compute_t" href="growth_modeling.LogisticSigmoidGrowth.compute_t.html" />
+    <link rel="prev" title="Logistic Sigmoid Growth" href="../logistic_sigmoid_growth.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../getting_started/index.html">Getting started</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="../index.html">API reference</a>
+        </li>
+        
+        
+      </ul>
+
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/grll/growth_modeling" target="_blank" rel="noopener">
+              <span><i class="fab fa-github-square"></i></span>
+            </a>
+          </li>
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar">
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+  <div class="bd-toc-item active">
+  
+
+  <ul class="nav bd-sidenav">
+      
+      
+      
+      
+        
+          
+              <li class="">
+                  <a href="../growth.html">Growth Base Class</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="../exponential_growth.html">Exponential Growth</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="../exponential_generalized_growth.html">Exponential Generalized Growth</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="../logistic_growth.html">Logistic Growth</a>
+              </li>
+          
+        
+          
+
+              <li class="active">
+                  <a href="../logistic_sigmoid_growth.html">Logistic Sigmoid Growth</a>
+                  <ul>
+                  
+                      <li class="active">
+                          <a href="">growth_modeling.LogisticSigmoidGrowth</a>
+                      </li>
+                  
+                      <li class="">
+                          <a href="growth_modeling.LogisticSigmoidGrowth.compute_t.html">growth_modeling.LogisticSigmoidGrowth.compute_t</a>
+                      </li>
+                  
+                      <li class="">
+                          <a href="growth_modeling.LogisticSigmoidGrowth.compute_y.html">growth_modeling.LogisticSigmoidGrowth.compute_y</a>
+                      </li>
+                  
+                      <li class="">
+                          <a href="growth_modeling.LogisticSigmoidGrowth.fit.html">growth_modeling.LogisticSigmoidGrowth.fit</a>
+                      </li>
+                  
+                  </ul>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="../richard_growth.html">Richard Growth</a>
+              </li>
+          
+        
+      
+      
+    </ul>
+
+</nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="growth-modeling-logisticsigmoidgrowth">
+<h1>growth_modeling.LogisticSigmoidGrowth<a class="headerlink" href="#growth-modeling-logisticsigmoidgrowth" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="growth_modeling.LogisticSigmoidGrowth">
+<em class="property">class </em><code class="sig-prename descclassname">growth_modeling.</code><code class="sig-name descname">LogisticSigmoidGrowth</code><span class="sig-paren">(</span><em class="sig-param">params</em>, <em class="sig-param">bounds</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/pandas-dev/pandas/blob/v0.0.1/growth_modeling/logistic_sigmoid_growth.py#L16-L99"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#growth_modeling.LogisticSigmoidGrowth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implement the “Logistic Sigmoid Growth”.</p>
+<p class="rubric">References</p>
+<dl class="citation">
+<dt class="label" id="r7e70cb936c6f-1"><span class="brackets">R7e70cb936c6f-1</span></dt>
+<dd><p>Colin P. D. Birch. 1999 “A New Generalized Logistic Sigmoid Growth 
+Equation Compared with the Richards Growth Equation.”</p>
+</dd>
+</dl>
+<p class="rubric">Attributes</p>
+<table class="table">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 91%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>params_signature</strong></p></td>
+<td><p>(array_like) An array containing the name of each parameter sorted by how they are called in compute_t and compute_y.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>params</strong></p></td>
+<td><p>(dict) A dictionary of parameter fit and used by the model to predict. The params dictionary should be ordered and have the following keys: “a”, “c”, “K” corresponding to the parameters of self.compute_y method.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>bounds</strong></p></td>
+<td><p>(array_like) Bounds for each parameter similar to the bounds parameter of scipy.curve_fit function.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>y_0</strong></p></td>
+<td><p>(int) The response value <cite>y</cite> at time 0. <strong>must be set before calling compute_y</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table class="longtable table">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="growth_modeling.LogisticSigmoidGrowth.compute_t.html#growth_modeling.LogisticSigmoidGrowth.compute_t" title="growth_modeling.LogisticSigmoidGrowth.compute_t"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_t</span></code></a>(self, y, \*args)</p></td>
+<td><p>Compute the time values based on the observed response <cite>y</cite>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="growth_modeling.LogisticSigmoidGrowth.compute_y.html#growth_modeling.LogisticSigmoidGrowth.compute_y" title="growth_modeling.LogisticSigmoidGrowth.compute_y"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_y</span></code></a>(self, t, \*args)</p></td>
+<td><p>Compute the growth response y at each time provided.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="growth_modeling.LogisticSigmoidGrowth.fit.html#growth_modeling.LogisticSigmoidGrowth.fit" title="growth_modeling.LogisticSigmoidGrowth.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(self, t, y[, p0])</p></td>
+<td><p>Fit the growth to the provided data and update self.params.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="growth_modeling.LogisticSigmoidGrowth.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">params</em>, <em class="sig-param">bounds</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/pandas-dev/pandas/blob/v0.0.1/growth_modeling/logistic_sigmoid_growth.py#L39-L53"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#growth_modeling.LogisticSigmoidGrowth.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize a Logistic Sigmoid Growth Model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>params: dict</strong></dt><dd><p>dict with the keys corresponding to the params_signature attribute.</p>
+</dd>
+<dt><strong>bounds</strong><span class="classifier">array_like</span></dt><dd><p>Bounds for each parameter similar to the bounds parameter of 
+scipy.curve_fit function should be order as params_signature.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable table">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#growth_modeling.LogisticSigmoidGrowth.__init__" title="growth_modeling.LogisticSigmoidGrowth.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self, params, bounds)</p></td>
+<td><p>Initialize a Logistic Sigmoid Growth Model.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="growth_modeling.LogisticSigmoidGrowth.compute_t.html#growth_modeling.LogisticSigmoidGrowth.compute_t" title="growth_modeling.LogisticSigmoidGrowth.compute_t"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_t</span></code></a>(self, y, \*args)</p></td>
+<td><p>Compute the time values based on the observed response <cite>y</cite>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="growth_modeling.LogisticSigmoidGrowth.compute_y.html#growth_modeling.LogisticSigmoidGrowth.compute_y" title="growth_modeling.LogisticSigmoidGrowth.compute_y"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_y</span></code></a>(self, t, \*args)</p></td>
+<td><p>Compute the growth response y at each time provided.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="growth_modeling.LogisticSigmoidGrowth.fit.html#growth_modeling.LogisticSigmoidGrowth.fit" title="growth_modeling.LogisticSigmoidGrowth.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(self, t, y[, p0])</p></td>
+<td><p>Fit the growth to the provided data and update self.params.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="../logistic_sigmoid_growth.html" title="previous page">Logistic Sigmoid Growth</a>
+    <a class='right-next' id="next-link" href="growth_modeling.LogisticSigmoidGrowth.compute_t.html" title="next page">growth_modeling.LogisticSigmoidGrowth.compute_t</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2020, Guillaume Raille.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

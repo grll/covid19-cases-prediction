@@ -1,0 +1,25 @@
+growth\_modeling.growth.Growth
+==============================
+
+.. currentmodule:: growth_modeling.growth
+
+.. autoclass:: Growth
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Growth.__init__
+      ~Growth.compute_t
+      ~Growth.compute_y
+      ~Growth.fit
+   
+   
+
+   
+   
+   
