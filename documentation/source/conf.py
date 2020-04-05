@@ -584,10 +584,10 @@ def linkcode_resolve(domain, info):
     fn = os.path.relpath(fn, start=os.path.dirname(growth_modeling.__file__))
 
     if "+" in growth_modeling.__version__:
-        return f"https://github.com/pandas-dev/pandas/blob/master/growth_modeling/{fn}{linespec}"
+        return f"https://github.com/grll/covid19-cases-prediction/blob/master/growth_modeling/{fn}{linespec}"
     else:
         return (
-            f"https://github.com/pandas-dev/pandas/blob/"
+            f"https://github.com/grll/covid19-cases-prediction/blob/"
             f"v{growth_modeling.__version__}/growth_modeling/{fn}{linespec}"
         )
 

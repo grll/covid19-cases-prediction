@@ -26,5 +26,7 @@ You can install this package simply by using the pip package manager::
 
 or you can directly clone the code from the github repository::
 
-    git clone https://github.com/grll/growth_modeling
+    git clone https://github.com/grll/covid19-cases-prediction.git
+
+The pip package is not available yet please use the clone method.
 
